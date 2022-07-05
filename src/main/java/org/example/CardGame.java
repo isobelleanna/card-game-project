@@ -10,14 +10,19 @@ public class CardGame {
         for (int i = 0; i < 14; i++) {
             int value = i + 1;
             String symbol = String.valueOf(value);
-            if(value == 11) {
-                symbol = "J";
-            } else if (value == 12) {
-                symbol = "Q";
-            } else if (value == 13) {
-                symbol = "K";
-            } else if (value == 14) {
-                symbol = "A";
+            switch (value) {
+                case 11:
+                    symbol = "J";
+                    break;
+                case 12:
+                    symbol = "Q";
+                    break;
+                case 13:
+                    symbol = "K";
+                    break;
+                case 14:
+                    symbol = "A";
+                    break;
             }
             deckOfCards.add(new Club(symbol, value));
             deckOfCards.add(new Spade(symbol, value));
@@ -26,4 +31,6 @@ public class CardGame {
         }
     }
     public static List<Card> getDeckOfCards(){return deckOfCards;}
+
+    public static Card getCardByIndex(int index){return deckOfCards.get(index);}
 }
