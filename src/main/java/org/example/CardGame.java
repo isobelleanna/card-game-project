@@ -9,7 +9,7 @@ public class CardGame {
     public static final List<Card> deckOfCards = new ArrayList<>();
 
     static {
-        for (int i = 0; i < 14; i++) {
+        for (int i = 1; i < 14; i++) {
             int value = i + 1;
             String symbol = String.valueOf(value);
             switch (value) {

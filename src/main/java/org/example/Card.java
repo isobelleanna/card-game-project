@@ -1,6 +1,6 @@
 package org.example;
 
-public class Card implements Comparable<Card> {
+public class Card implements Comparable<Card>, Searchable {
     private String suit;
     private String symbol;
     private int value;
@@ -23,5 +23,9 @@ public class Card implements Comparable<Card> {
     @Override
     public int compareTo(Card card) {
         return value - card.getValue();
+    }
+
+    public boolean hasMatch(String searchTerm) {
+        return suit.contains(searchTerm);
     }
 }

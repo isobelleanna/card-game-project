@@ -22,4 +22,17 @@
 - Then create methods
 - Use the interface comparable to sort by number
 - Use searchable to sort by suit
-- Use Math.Random to shuffle
+- Use collection.shuffle() to shuffle
+
+# Could 
+# Class Snap that extends CardGame
+- should use methods dealCard(), sortDeckInNumberOrder(), sortDeckIntoSuits() and shuffleDeck() as well as some new ones.
+- by pressing enter the user takes there turn
+- each turn a new card is dealt from the deck
+- the game continues until two cards in a row have the same symbol. When this happens the player wins and the game ends.
+
+# Psudeo Code
+- create a PlayCommands Class
+- if statement that when user input "" dealCard()
+- fields current card + previous card
+- if current card + previous card symbol is the same printMessage("You win")
