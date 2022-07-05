@@ -1,6 +1,6 @@
 package org.example;
 
-public class Card {
+public class Card implements Comparable<Card> {
     private String suit;
     private String symbol;
     private int value;
@@ -11,8 +11,17 @@ public class Card {
         this.value = value;
     }
 
+    public int getValue() {
+        return value;
+    }
+
     @Override
     public String toString(){
-        return "\n " + symbol + " " + suit + " value: " + value;
+        return "\n" + symbol + " " + suit + "\nvalue: " + value;
+    }
+
+    @Override
+    public int compareTo(Card card) {
+        return value - card.getValue();
     }
 }

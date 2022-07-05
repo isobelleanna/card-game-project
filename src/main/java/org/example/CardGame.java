@@ -1,7 +1,9 @@
 package org.example;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class CardGame {
     public static final List<Card> deckOfCards = new ArrayList<>();
@@ -33,4 +35,18 @@ public class CardGame {
     public static List<Card> getDeckOfCards(){return deckOfCards;}
 
     public static Card getCardByIndex(int index){return deckOfCards.get(index);}
+
+    public static Card dealCard(){return getCardByIndex(0);}
+
+    public static List<Card> shuffleDeck(){
+        Collections.shuffle(deckOfCards);
+        return deckOfCards;
+    }
+
+    public static List<Card> sortDeckInNumberOrder(){
+        List<Card> sortedByNumber = deckOfCards.stream()
+                .sorted()
+                .collect(Collectors.toList());
+        return sortedByNumber;
+    }
 }

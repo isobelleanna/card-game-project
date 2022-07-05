@@ -20,3 +20,6 @@
 # Psudeo Code 
 - Start with creating a commands class, set up methods as options in command class.
 - Then create methods
+- Use the interface comparable to sort by number
+- Use searchable to sort by suit
+- Use Math.Random to shuffle

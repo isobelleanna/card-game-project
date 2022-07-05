@@ -12,16 +12,19 @@ public class SortCommands extends Commands{
         int userInput = getIntegerInput();
         switch (userInput) {
             case 1:
-                printMessage("Your card is " + CardGame.getCardByIndex(0));
+                printMessage("Your card is " + CardGame.dealCard());
                 break;
             case 2:
-                printMessage("Sort by number");
+                printMessage("Sorting the deck by number....");
+                CardGame.sortDeckInNumberOrder().forEach(card -> printMessage(card.toString()));
                 break;
             case 3:
                 printMessage("Sort by suit");
                 break;
             case 4:
-                printMessage("Shuffle the deck");
+                printMessage("Shuffling the deck....");
+                CardGame.shuffleDeck();
+                CardGame.getDeckOfCards().forEach(card -> printMessage(card.toString()));
                 break;
             default:
                 setNextCommands("home");
