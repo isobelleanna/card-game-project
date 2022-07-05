@@ -16,6 +16,10 @@ public class Main {
                     currentCommands = new SortCommands();
                     currentCommands.run();
                     break;
+                case "play":
+                    currentCommands = new PlayCommands();
+                    currentCommands.run();
+                    break;
                 default:
                     isActive = false;
 

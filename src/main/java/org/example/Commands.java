@@ -54,4 +54,9 @@ public abstract class Commands {
     public int getIntegerInput(){
         return getIntegerInput(commands.length);
     }
+
+    public String getStringInput(){
+        String userInput = scanner.nextLine();
+        return userInput;
+    }
 }
