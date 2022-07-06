@@ -1,9 +1,5 @@
 package org.example.cardGameProject;
-import org.example.cardGameProject.cardGame.CardGame;
-import org.example.cardGameProject.commands.Commands;
-import org.example.cardGameProject.commands.HomeCommands;
-import org.example.cardGameProject.commands.PlayCommands;
-import org.example.cardGameProject.commands.SortCommands;
+import org.example.cardGameProject.commands.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,6 +18,10 @@ public class Main {
                     break;
                 case "play":
                     currentCommands = new PlayCommands();
+                    currentCommands.run();
+                    break;
+                case "two":
+                    currentCommands = new TwoPlayCommands();
                     currentCommands.run();
                     break;
                 default:

@@ -2,12 +2,11 @@ package org.example.cardGameProject.commands;
 
 import org.example.cardGameProject.card.Card;
 import org.example.cardGameProject.card.CardSuit;
-import org.example.cardGameProject.cardGame.CardGame;
 import org.example.cardGameProject.cardGame.Snap;
 
 public class PlayCommands extends Commands {
     public PlayCommands() {
-        super(new String[]{"Start game", "Go Back", "Quit"}, "play");
+        super(new String[]{"Single Player Game","Two Player Game", "Go Back", "Quit"}, "play");
     }
 
     @Override
@@ -15,16 +14,14 @@ public class PlayCommands extends Commands {
         printCommands();
         int userInput = getIntegerInput();
         if(userInput == 1){
-            printMessage("Playing game");
             Snap.shuffleDeck();
             boolean activeGame = true;
             int i = 0;
             Card previousCard = Snap.getCardByIndex(i);
-            CardSuit previousCardSuit;
             printMessage(previousCard + "\n");
             while (activeGame) {
                 previousCard = Snap.getCardByIndex(i);
-                previousCardSuit = previousCard.getSuit();
+                CardSuit previousCardSuit = previousCard.getSuit();
                 Card currentCard = Snap.getCardByIndex(i + 1);
                 CardSuit currentCardSuit = currentCard.getSuit();
                 printMessage(currentCard.toString());
@@ -42,6 +39,8 @@ public class PlayCommands extends Commands {
                 i ++;
             }
         } else if (userInput ==2) {
+            setNextCommands("two");
+        }else if (userInput ==3) {
             setNextCommands("home");
         }else {
             setNextCommands("");
