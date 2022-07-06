@@ -7,7 +7,6 @@ import org.example.cardGameProject.commands.SortCommands;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(CardGame.getDeckOfCards());
         HomeCommands homeCommands = new HomeCommands();
         Commands currentCommands = homeCommands;
         boolean isActive = true;

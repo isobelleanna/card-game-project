@@ -5,27 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf2adedd-1912-40d3-85bd-e7aacc628828" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/card/CardSuit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/card/Club.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/card/Diamond.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/card/Heart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/card/Spade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/cardGame/Snap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/player/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/card/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CardGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/cardGame/CardGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Club.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/commands/Commands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Diamond.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Heart.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/HomeCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/commands/HomeCommands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PlayCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/commands/PlayCommands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Searchable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/utils/Searchable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Snap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SortCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/commands/SortCommands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Spade.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/card/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/card/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/commands/PlayCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/commands/PlayCommands.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>

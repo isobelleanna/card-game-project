@@ -17,9 +17,13 @@ public class Card implements Comparable<Card>, Searchable {
         return value;
     }
 
+    public CardSuit getSuit() {
+        return suit;
+    }
+
     @Override
     public String toString(){
-        return "\n" + symbol + " " + suit + "\nvalue: " + value;
+        return "\n" + symbol + " " + suit;
     }
 
     @Override
