@@ -1,8 +1,8 @@
-package org.example;
+package org.example.cardGameProject.commands;
 
-public class HomeCommands extends Commands{
+public class HomeCommands extends Commands {
 
-    protected HomeCommands() {
+    public HomeCommands() {
         super(new String[]{"Sort Deck","Play Snap", "Quit"}, "home");
     }
 

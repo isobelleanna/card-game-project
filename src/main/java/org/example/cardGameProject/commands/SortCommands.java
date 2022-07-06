@@ -1,10 +1,13 @@
-package org.example;
+package org.example.cardGameProject.commands;
+
+import org.example.cardGameProject.card.Card;
+import org.example.cardGameProject.cardGame.CardGame;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class SortCommands extends Commands{
-    protected SortCommands() {
+public class SortCommands extends Commands {
+    public SortCommands() {
         super(new String[]{ "Deal a card","Sort by number", "Sort by suit", "Shuffle the deck", "Go back", "Quit"}, "sort");
     }
 

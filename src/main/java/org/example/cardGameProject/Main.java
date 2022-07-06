@@ -1,4 +1,9 @@
-package org.example;
+package org.example.cardGameProject;
+import org.example.cardGameProject.cardGame.CardGame;
+import org.example.cardGameProject.commands.Commands;
+import org.example.cardGameProject.commands.HomeCommands;
+import org.example.cardGameProject.commands.PlayCommands;
+import org.example.cardGameProject.commands.SortCommands;
 
 public class Main {
     public static void main(String[] args) {

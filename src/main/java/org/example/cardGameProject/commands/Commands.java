@@ -1,4 +1,4 @@
-package org.example;
+package org.example.cardGameProject.commands;
 
 import java.util.Scanner;
 

@@ -1,4 +1,6 @@
-package org.example;
+package org.example.cardGameProject.cardGame;
+
+import org.example.cardGameProject.card.*;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -1,4 +1,4 @@
-package org.example;
+package org.example.cardGameProject.utils;
 
 public interface Searchable {
     String toString();
