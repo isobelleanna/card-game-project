@@ -26,7 +26,6 @@ public class TwoPlayCommands extends Commands{
             playerTwo = new Player(username);
             printMessage("Player 1: " + playerOne.getInfo());
             printMessage("Player 2: " + playerTwo.getInfo());
-            int player = 1;
             boolean activeGame = true;
             int i = 0;
             Snap.shuffleDeck();
@@ -53,15 +52,15 @@ public class TwoPlayCommands extends Commands{
                         activeGame = false;
                         printMessage("You have completed the deck!");
                         setNextCommands("play");
-                    }else {
+                    }else if (i % 2 == 0){
+                        printMessage("Player One:");
+                        getStringInput();
+                    }else if (i % 2 != 0){
+                        printMessage("Player Two:");
                         getStringInput();
                     }
                     i ++;
-                    player = 1;
-
-
             }
-
         } else if (userInput == 2) {
             setNextCommands("home");
         }else {
