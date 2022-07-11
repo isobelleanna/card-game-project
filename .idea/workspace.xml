@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="cf2adedd-1912-40d3-85bd-e7aacc628828" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/cardGame/CardGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/cardGame/CardGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/cardGame/Snap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/cardGame/Snap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/commands/SortCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/commands/SortCommands.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/commands/TwoPlayCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/commands/TwoPlayCommands.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

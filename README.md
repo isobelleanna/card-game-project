@@ -37,7 +37,7 @@
 - fields current card + previous card
 - if current card + previous card symbol is the same printMessage("You win")
 
-# Would 
+# Would (completed)
 - create a player class so two players can play snap together
 - the users take it in terms to go if the snap occurs, they win.
 - add a timer so that when there is a snap oppurtunity, the player has two seconds to submit snap in order to win. If they don't type they loose.
@@ -46,3 +46,10 @@
 - create a player class, with username and score and getter and setter for score
 - create an int field in play commands called playerNum if 1 run user with id of 1 then set player to 2 and run user with the id of two. 
 - increase score method which increases users score by 1
+
+# Would (part 2)
+- add a timer so that when there is a snap opportunity, the player has 2 seconds to submit snap to win, if they don't they loose.
+
+# Pseudo Code
+- use class timer and set to 2 seconds 
+- if userinput == "snap" print "You win", else "You loose"

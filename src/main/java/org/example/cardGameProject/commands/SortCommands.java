@@ -26,25 +26,26 @@ public class SortCommands extends Commands {
                 break;
             case 3:
                 printMessage("Sort by suit");
-                List<String> suitSpade = CardGame.getDeckOfCards()
+                List<Card> sortedByNumber = CardGame.sortDeckInNumberOrder();
+                List<String> suitSpade = sortedByNumber
                         .stream()
                         .filter(card -> card.hasMatch("spade"))
                         .map(Card::toString)
                         .collect(Collectors.toList());
                 suitSpade.forEach(this::printMessage);
-                List<String> suitClub = CardGame.getDeckOfCards()
+                List<String> suitClub = sortedByNumber
                         .stream()
                         .filter(card -> card.hasMatch("club"))
                         .map(Card::toString)
                         .collect(Collectors.toList());
                 suitClub.forEach(this::printMessage);
-                List<String> suitHeart = CardGame.getDeckOfCards()
+                List<String> suitHeart = sortedByNumber
                         .stream()
                         .filter(card -> card.hasMatch("heart"))
                         .map(Card::toString)
                         .collect(Collectors.toList());
                 suitHeart.forEach(this::printMessage);
-                List<String> suitDiamond = CardGame.getDeckOfCards()
+                List<String> suitDiamond = sortedByNumber
                         .stream()
                         .filter(card -> card.hasMatch("diamond"))
                         .map(Card::toString)

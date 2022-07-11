@@ -5,9 +5,11 @@ import org.example.cardGameProject.card.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+
 import java.util.stream.Collectors;
 
-public class CardGame {
+
+public abstract class CardGame {
     public static final List<Card> deckOfCards = new ArrayList<>();
 
     static {
@@ -38,7 +40,7 @@ public class CardGame {
 
     public static Card getCardByIndex(int index){return deckOfCards.get(index);}
 
-    public static Card dealCard(){return getCardByIndex(0);}
+    public static Card dealCard(){return getCardByIndex((int)(Math.random() * 52) + 1);}
 
     public static List<Card> shuffleDeck(){
         Collections.shuffle(deckOfCards);
@@ -51,4 +53,6 @@ public class CardGame {
                 .collect(Collectors.toList());
         return sortedByNumber;
     }
+
+
 }

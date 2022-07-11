@@ -32,7 +32,7 @@ public class TwoPlayCommands extends Commands{
             Card previousCard = Snap.getCardByIndex(i);
             printMessage(previousCard + "\n");
             while (activeGame) {
-                    previousCard = Snap.getCardByIndex(i);
+                previousCard = Snap.getCardByIndex(i);
                     CardSuit previousCardSuit = previousCard.getSuit();
                     Card currentCard = Snap.getCardByIndex(i + 1);
                     CardSuit currentCardSuit = currentCard.getSuit();
