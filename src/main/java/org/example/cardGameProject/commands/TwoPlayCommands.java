@@ -2,7 +2,6 @@ package org.example.cardGameProject.commands;
 
 import org.example.cardGameProject.card.Card;
 import org.example.cardGameProject.card.CardSuit;
-import org.example.cardGameProject.cardGame.CardGame;
 import org.example.cardGameProject.cardGame.Snap;
 import org.example.cardGameProject.player.Player;
 
@@ -17,16 +16,18 @@ public class TwoPlayCommands extends Commands{
     public TwoPlayCommands() {
         super(new String[]{"Level Easy", "Level Hard", "Go Back", "Quit"}, "two");
     }
+
     Timer timer = new Timer();
     TimerTask task = new TimerTask() {
         @Override
         public void run() {
             userString = getStringInput();
             if(Objects.equals(userString, "snap")){
-                System.out.println("You win");
+                System.out.println("You win\n");
                 timer.cancel();
             }else {
-                System.out.println("You loose");
+                System.out.println("You loose\n");
+                timer.cancel();
             }
         }
     };
@@ -42,8 +43,8 @@ public class TwoPlayCommands extends Commands{
             printMessage("Enter username Player 2");
             username = getStringInput();
             playerTwo = new Player(username);
-            boolean activeGame = true;
             int i = 0;
+            boolean activeGame = true;
             Snap.shuffleDeck();
             Card previousCard = Snap.getCardByIndex(i);
             printMessage(previousCard + "\n");
@@ -94,27 +95,29 @@ public class TwoPlayCommands extends Commands{
                 CardSuit previousCardSuit = previousCard.getSuit();
                 Card currentCard = Snap.getCardByIndex(i + 1);
                 CardSuit currentCardSuit = currentCard.getSuit();
+                if (i % 2 == 0){
+                    printMessage("Player One:");
+                }else {
+                    printMessage("Player Two:");
+                }
                 printMessage(currentCard.toString());
                 if(previousCardSuit == currentCardSuit){
                     try
                     {
                         timer.schedule(task, 2000);
-                        printMessage("\n");
                         Thread.sleep(2000);
                         activeGame = false;
                     } catch (InterruptedException e) {
                         throw new RuntimeException(e);
                     }
 
+                    setNextCommands("");
+
                 } else if (i == 51) {
                     activeGame = false;
                     printMessage("You have completed the deck!");
                     setNextCommands("play");
-                }else if (i % 2 == 0){
-                    printMessage("Player One:");
-                    getStringInput();
-                }else if (i % 2 != 0){
-                    printMessage("Player Two:");
+                }else {
                     getStringInput();
                 }
                 i ++;

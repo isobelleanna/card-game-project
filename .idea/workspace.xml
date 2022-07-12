@@ -6,10 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="cf2adedd-1912-40d3-85bd-e7aacc628828" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/cardGame/CardGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/cardGame/CardGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/cardGame/Snap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/cardGame/Snap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/commands/Commands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/commands/Commands.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/commands/TwoPlayCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/commands/TwoPlayCommands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/cardGameProject/player/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/cardGameProject/player/PlayerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,32 +55,23 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.example.cardGameProject.cardGame" />
       <recent name="org.example.cardGameProject.player" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.org.example.cardGameProject.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.cardGameProject.card.Main" />
+  <component name="RunManager" selected="JUnit.PlayerTest.GetInfo_HasUsernameAndScore_ReturnInfo">
+    <configuration name="CardGameTest.GetCardByIndex_Has2OfClubs_ReturnCard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="card-game-project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.card.*" />
+          <option name="PATTERN" value="org.example.cardGameProject.cardGame.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="org.example.cardGameProject.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.cardGameProject.Main" />
-      <module name="card-game-project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.cardGameProject.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PACKAGE_NAME" value="org.example.cardGameProject.cardGame" />
+      <option name="MAIN_CLASS_NAME" value="org.example.cardGameProject.cardGame.CardGameTest" />
+      <option name="METHOD_NAME" value="GetCardByIndex_Has2OfClubs_ReturnCard" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -100,10 +91,61 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PlayerTest.GetInfo_HasUsernameAndScore_ReturnInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="card-game-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.cardGameProject.player.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.cardGameProject.player" />
+      <option name="MAIN_CLASS_NAME" value="org.example.cardGameProject.player.PlayerTest" />
+      <option name="METHOD_NAME" value="GetInfo_HasUsernameAndScore_ReturnInfo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlayerTest.GetScore_HasScore0_ReturnsScore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="card-game-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.cardGameProject.player.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.cardGameProject.player" />
+      <option name="MAIN_CLASS_NAME" value="org.example.cardGameProject.player.PlayerTest" />
+      <option name="METHOD_NAME" value="GetScore_HasScore0_ReturnsScore" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlayerTest.IncreaseScore_IncreaseMulti_ReturnScore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="card-game-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.cardGameProject.player.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.cardGameProject.player" />
+      <option name="MAIN_CLASS_NAME" value="org.example.cardGameProject.player.PlayerTest" />
+      <option name="METHOD_NAME" value="IncreaseScore_IncreaseMulti_ReturnScore" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.org.example.cardGameProject.Main" />
+        <item itemvalue="JUnit.PlayerTest.GetInfo_HasUsernameAndScore_ReturnInfo" />
         <item itemvalue="JUnit.PlayerTest" />
+        <item itemvalue="JUnit.PlayerTest.IncreaseScore_IncreaseMulti_ReturnScore" />
+        <item itemvalue="JUnit.PlayerTest.GetScore_HasScore0_ReturnsScore" />
+        <item itemvalue="JUnit.CardGameTest.GetCardByIndex_Has2OfClubs_ReturnCard" />
       </list>
     </recent_temporary>
   </component>

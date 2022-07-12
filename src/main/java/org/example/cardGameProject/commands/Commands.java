@@ -56,7 +56,6 @@ public abstract class Commands {
     }
 
     public String getStringInput(){
-        String userInput = scanner.nextLine();
-        return userInput;
+        return scanner.nextLine();
     }
 }
