@@ -24,8 +24,6 @@ public class TwoPlayCommands extends Commands{
             printMessage("Enter username Player 2");
             username = getStringInput();
             playerTwo = new Player(username);
-            printMessage("Player 1: " + playerOne.getInfo());
-            printMessage("Player 2: " + playerTwo.getInfo());
             boolean activeGame = true;
             int i = 0;
             Snap.shuffleDeck();

@@ -5,5 +5,4 @@ import java.util.TimerTask;
 
 public class Snap extends CardGame {
 
-
 }

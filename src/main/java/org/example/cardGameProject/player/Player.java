@@ -1,7 +1,7 @@
 package org.example.cardGameProject.player;
 
 public class Player {
-    private String username;
+    private final String username;
     private int score;
 
     private int id;
