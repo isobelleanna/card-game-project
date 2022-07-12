@@ -2,14 +2,13 @@ package org.example.cardGameProject.cardGame;
 
 import org.example.cardGameProject.card.*;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 import java.util.stream.Collectors;
 
 
 public abstract class CardGame {
+
     public static final List<Card> deckOfCards = new ArrayList<>();
 
     static {
@@ -53,4 +52,5 @@ public abstract class CardGame {
                 .collect(Collectors.toList());
         return sortedByNumber;
     }
+
 }

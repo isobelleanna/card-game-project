@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf2adedd-1912-40d3-85bd-e7aacc628828" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/cardGameProject/player/PlayerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/cardGame/CardGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/cardGame/CardGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/cardGame/Snap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/cardGame/Snap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/commands/TwoPlayCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/commands/TwoPlayCommands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/cardGameProject/player/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +58,7 @@
       <recent name="org.example.cardGameProject.player" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PlayerTest">
+  <component name="RunManager" selected="Application.org.example.cardGameProject.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.cardGameProject.card.Main" />
       <module name="card-game-project" />
@@ -104,8 +102,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PlayerTest" />
         <item itemvalue="Application.org.example.cardGameProject.Main" />
+        <item itemvalue="JUnit.PlayerTest" />
       </list>
     </recent_temporary>
   </component>
